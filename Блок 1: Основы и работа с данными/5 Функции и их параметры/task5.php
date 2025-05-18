@@ -29,3 +29,4 @@ echo generatePassword() . PHP_EOL;
 // ✅ Должен быть 8-значный пароль с цифрами.
 
 echo generatePassword(length: 12, includeSpecialChars: true) . PHP_EOL;  
+// ✅ Должен быть 12-значный пароль с цифрами и спецсимволами.
