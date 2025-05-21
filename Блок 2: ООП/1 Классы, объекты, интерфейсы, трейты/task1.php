@@ -17,10 +17,10 @@ class Car
 
     public function getCarInfo(): string
     {
-        return "{$this->brand} {$this->model}, {$this->year}" . PHP_EOL;
+        return "{$this->brand} {$this->model}, {$this->year}";
     }
 }
 
 $car = new Car("Toyota", "Camry", 2020);
-echo $car->getCarInfo(); 
+echo $car->getCarInfo() . PHP_EOL;
 // ✅ "Toyota Camry, 2020"
