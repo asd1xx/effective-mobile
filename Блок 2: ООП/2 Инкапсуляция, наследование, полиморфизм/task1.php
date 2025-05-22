@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 class BankAccount
 {
+    public const int MIN_BALANCE = 0;
+
     private float $balance;
 
     public function __construct(float $balance)
@@ -28,8 +30,9 @@ class BankAccount
 
     public function withdraw(float $value): void
     {
-        if ($this->balance - $value < 0) {
+        if ($this->balance - $value < self::MIN_BALANCE) {
             print_r('Ошибка: недостаточно средств' . PHP_EOL);
+            return;
         }
 
         $this->balance -= $value;
