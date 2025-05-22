@@ -32,6 +32,7 @@ class BankAccount
     {
         if ($this->balance - $value < self::MIN_BALANCE) {
             print_r('Ошибка: недостаточно средств' . PHP_EOL);
+            return;
         }
 
         $this->balance -= $value;
