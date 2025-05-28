@@ -18,7 +18,3 @@ class User
         return $this->name;
     }
 }
-
-$user = new User("Иван");
-echo $user->getName() . PHP_EOL;
-// ✅ "Иван"
